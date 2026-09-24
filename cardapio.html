@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio completo — Café Feliz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="cabecalho">
+    <div class="container">
+      <p class="logo">Café <span>Feliz</span></p>
+      <nav id="menu-principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="cardapio.html" class="ativo">Cardápio</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="cardapio-resumo">
+      <div class="container">
+        <p class="rotulo">Cardápio completo</p>
+        <h1>Tudo que servimos no Café Feliz</h1>
+        <p class="descricao-cardapio">
+          Preços válidos para consumo no local. Todas as bebidas podem ser feitas com leite vegetal, sem custo adicional.
+        </p>
+
+        <table>
+          <caption>Cafés e bebidas à base de café</caption>
+          <thead>
+            <tr>
+              <th scope="col">Bebida</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Espresso</td><td>Dose curta e encorpada</td><td>R$ 6,00</td></tr>
+            <tr><td>Espresso duplo</td><td>Duas doses de espresso</td><td>R$ 9,00</td></tr>
+            <tr><td>Café coado</td><td>Método tradicional, coador de pano</td><td>R$ 7,50</td></tr>
+            <tr><td>Americano</td><td>Espresso diluído em água quente</td><td>R$ 7,00</td></tr>
+            <tr><td>Cappuccino</td><td>Espresso, leite vaporizado e canela</td><td>R$ 10,00</td></tr>
+            <tr><td>Latte</td><td>Espresso com bastante leite vaporizado</td><td>R$ 10,50</td></tr>
+            <tr><td>Mocha</td><td>Café, chocolate meio amargo e chantilly</td><td>R$ 12,00</td></tr>
+            <tr><td>Café gelado</td><td>Espresso servido sobre gelo</td><td>R$ 9,50</td></tr>
+          </tbody>
+        </table>
+
+        <table class="tabela-secundaria">
+          <caption>Doces e salgados</caption>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Pão de queijo</td><td>Porção com 4 unidades</td><td>R$ 8,00</td></tr>
+            <tr><td>Bolo de fubá</td><td>Fatia generosa, feito na casa</td><td>R$ 9,00</td></tr>
+            <tr><td>Croissant</td><td>Amanteigado, servido quente</td><td>R$ 11,00</td></tr>
+          </tbody>
+        </table>
+
+        <p class="link-voltar"><a href="index.html">&larr; Voltar para a página inicial</a></p> <!--&larr; é uma seta apontando para a esquerda no html-->
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container">
+      <p class="copyright">&copy; 2026 Café Feliz. Trabalho acadêmico — Front-End I.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Feliz — Cafeteria artesanal</title>
+  <meta name="description" content="Café Feliz: uma cafeteria de bairro com grãos torrados na casa, bebidas artesanais e um cantinho aconchegante.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!--cabeçalho -->
+  <header id="cabecalho">
+    <div class="container">
+      <p class="logo">Café <span>Feliz</span></p>
+      <nav id="menu-principal">
+        <ul>
+          <li><a href="#home" class="ativo">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#destaques">Especialidades</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>  <!--navega para o cardapio que está dentro do projeto-->
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+ <!--home, inicio-->
+    <section id="home">
+      <div class="container">
+        <p class="bem-vindo">Bem-vindo(a) ao</p>
+        <h1>Café Feliz</h1>
+        <p class="descricao">Grãos torrados com carinho, receitas de família e aquele cheirinho de café fresco que só a nossa casa tem.</p>
+        <a href="#sobre" class="botao">Conheça a nossa história</a> <!-- link âncora -->
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section id="sobre">
+      <div class="container grade-sobre">
+        <div>
+          <p class="rotulo">A nossa história</p>
+          <h2>Um café que começou pequeno e cresceu com afeto</h2>
+          <p>O <strong>Café Feliz</strong> nasceu em 2016, na garagem da família Souza, com uma torradeira pequena e muita vontade de servir um café diferente para o bairro. Hoje seguimos com o mesmo cuidado artesanal em cada xícara.</p>
+          <p>Veja como preparamos o nosso café, do grão à xícara:</p>
+          <!-- lista ordenada -->
+          <ol>
+            <li>Selecionamos grãos 100% arábica de pequenos produtores;</li>
+            <li>Torramos em pequenos lotes, todos os dias pela manhã;</li>
+            <li>Moemos na hora do pedido, para preservar o aroma;</li>
+            <li>Preparamos com métodos manuais, um a um.</li>
+          </ol>
+        </div>
+
+        <!-- figura com legenda -->
+        <figure>
+          <img src="imagens/2f53139ff4cb36a33ff4a9582b5be6a9.jpg" alt="Ilustração de uma xícara de café fumegante sobre um pires">
+          <figcaption>Nosso café é servido fresquinho, direto da torra do dia.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ESPECIALIDADES / SEÇÃO 2 ===================== -->
+    <section id="destaques">
+      <div class="container">
+        <p class="rotulo rotulo-centro">Do nosso balcão</p>
+        <h2 class="titulo-centro">Nossas especialidades</h2>
+
+        <div class="grade-destaques">
+          <div class="cartao">
+            <h3>Americano Especial</h3>
+            <img src="imagens/img1.jpg" alt="café coado na hora, servido em xícara branca">
+            <p>Café coado na hora, encorpado e equilibrado. Perfeito para começar o dia.</p>
+          </div>
+          <div class="cartao">
+            <h3>Latte Delícia</h3>
+            <img src="imagens/img2.jpg" alt="latte servido em copo de vidro transparente, com espuma cremosa e canela polvilhada por cima">
+            <p>Espresso duplo com leite vaporizado e uma pitada de canela por cima.</p>
+          </div>
+          <div class="cartao">
+            <h3>Mocha da Casa</h3>
+            <img src="imagens/img3.jpg" alt="mocha servida em xícara, com camada de chantilly por cima">
+            <p>Café, chocolate meio amargo e chantilly. A queridinha do fim de tarde.</p>
+          </div>
+        </div>
+
+        <!-- lista não ordenada -->
+        <ul class="lista-simples">
+          <li>Grãos torrados na casa</li>
+          <li>Opções veganas</li>
+          <li>Wi-Fi gratuito</li>
+          <li>Ambiente pet friendly</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== ARTIGO + ASIDE ===================== -->
+    <section id="blog">
+      <div class="container grade-artigo">
+
+        <article>
+          <h2>Você sabia? A origem do café</h2>
+          <p class="meta">Publicado pela equipe do Café Feliz</p>
+
+          <img class="imagem-artigo" src="imagens/shutterstock_95863327-e1460064424869-760x460.jpg" alt="Grãos de café espalhados sobre uma superfície escura">
+
+          <p>Segundo a lenda, o café foi descoberto na Etiópia por um pastor de cabras chamado Kaldi. Ele percebeu que seu rebanho ficava agitado depois de comer os frutos vermelhos de um arbusto e resolveu experimentar por conta própria.</p>
+          <p>Da Etiópia, o café viajou para a Península Arábica e, séculos depois, chegou às Américas — inclusive ao Brasil, que hoje é <strong>um dos maiores produtores do mundo</strong>.</p>
+
+          <blockquote>"Um bom café não é feito às pressas. Ele é feito com tempo, escolha e cuidado." — ditado popular entre torrefadores</blockquote>
+
+          <p>Aqui no Café Feliz, contamos um pouco dessa história em cada xícara que servimos.<br>
+          Passe para conhecer!</p>
+        </article>
+
+        <!-- conteúdo relacionado -->
+        <aside>
+          <h2>Horário de funcionamento</h2>
+          <ul>
+            <li><span>Segunda a sexta</span> <span>7h às 19h</span></li>
+            <li><span>Sábado</span> <span>8h às 18h</span></li>
+            <li><span>Domingo</span> <span>9h às 14h</span></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ===================== TABELA (cardápio resumido) ===================== -->
+    <section id="cardapio-resumo">
+      <div class="container">
+        <p class="rotulo">Direto do balcão</p>
+        <h2>Cardápio resumido</h2>
+
+        <table>
+          <caption>Alguns dos itens mais pedidos do Café Feliz</caption>
+          <thead>
+            <tr>
+              <th scope="col">Bebida</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Espresso</td>
+              <td>Dose curta e encorpada</td>
+              <td>R$ 6,00</td>
+            </tr>
+            <tr>
+              <td>Café Coado</td>
+              <td>Método tradicional, servido em coador de pano</td>
+              <td>R$ 7,50</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>Espresso, leite vaporizado e canela</td>
+              <td>R$ 10,00</td>
+            </tr>
+            <tr>
+              <td>Mocha</td>
+              <td>Café, chocolate meio amargo e chantilly</td>
+              <td>R$ 12,00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="link-cardapio"><a href="cardapio.html">Ver cardápio completo →</a></p>
+      </div>
+    </section>
+
+  </main>
+
+<!--rodapé-->
+  <footer id="rodape">
+    <div class="container">
+      <div class="grade-rodape">
+        <div>
+          <h3>Café Feliz</h3>
+          <p>Rua, 123 — Centro<br>Cidade, MG</p>
+        </div>
+        <div id="contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>Tel: (00) 90000-0000</li>
+            <li><a href="mailto:contato@cafefeliz.com.br">contato@cafefeliz.com.br</a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Siga no Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="cardapio.html">Cardápio completo</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Café Feliz. Trabalho — Front-End I.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
