@@ -6,9 +6,8 @@
   padding: 0;
 }
 
-/*faz a rolagem suave ao navegar para as referencias #*/
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*faz a rolagem suave ao navegar para as referencias #*/
 }
 
 body {
@@ -32,7 +31,7 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
   color: #f3e9dc;
-  line-height: 1.2;
+  line-height: 1.2; /*serve para dar espaços entre as linhas dos textos*/
 }
 
 /*estilos gerais*/
@@ -51,7 +50,7 @@ section {
 #cabecalho {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10; /*é um valor de prioridade do cabeçalho, serve para que ele fique acima dos outros elementos ao rolar a página*/
   background-color: rgba(27, 18, 13, 0.95);
   border-bottom: 1px solid #3a2b20;
 }
@@ -183,7 +182,8 @@ section {
 figure {
   border: 1px solid #3a2b20;
   padding: 10px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 
 figcaption {
@@ -205,7 +205,9 @@ figcaption {
   width: 100%;
   height: 400px;
   border-radius: 8px;
+  object-fit: contain; /*contain define que a imagem se ajuste ao contêiner sem distorcer, pois na responsividade ela estava ficando cortada*/
 }
+
 .cartao {
   border-top: 3px solid #c98a4b;
   background-color: #241a13;
@@ -227,7 +229,7 @@ figcaption {
   list-style: none;
   margin-top: 40px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*flex-wrap: wrap; permite que os itens da lista quebrem para a próxima linha se não couberem na largura disponível*/
   gap: 10px 28px;
   color: #cbb8a3;
 }
@@ -294,14 +296,10 @@ aside ul {
 
 aside ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*serve para alinhar os itens da lista distribuindo o espaço para eles igualmente, nesse caso ele dividiu n meio dando espaço para os dias ficarem a esquerda e os horarios a direita*/
   padding: 8px 0;
   border-bottom: 1px solid #3a2b20;
   font-size: 0.9rem;
-}
-
-aside ul li:last-child {
-  border-bottom: none;
 }
 
 /*cardapio resumido*/
@@ -311,7 +309,7 @@ aside ul li:last-child {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /*border-collapse: collapse; serve para remover o espaçamento entre as bordas das células da tabela, deixando a tabela mais compacta e visualmente mais limpa*/
   margin-top: 40px;
   background-color: #f3e9dc;
 }
@@ -366,7 +364,7 @@ tbody tr:hover {
 
 .grade-rodape {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /*serve para criar três colunas de largura igual*/
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -396,54 +394,4 @@ tbody tr:hover {
   font-size: 0.8rem;
   padding-top: 24px;
   border-top: 1px solid #3a2b20;
-}
-
-/* =======================================================
-   RESPONSIVIDADE — media queries
-   ======================================================= */
-@media (max-width: 900px) {
-  .grade-sobre,
-  .grade-artigo {
-    grid-template-columns: 1fr;
-  }
-
-  .grade-destaques {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grade-rodape {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  #cabecalho .container {
-    flex-direction: column;
-    height: auto;
-    padding: 16px 24px;
-    gap: 12px;
-  }
-
-  #menu-principal ul {
-    gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  section {
-    padding: 60px 0;
-  }
-
-  .grade-destaques {
-    grid-template-columns: 1fr;
-  }
-
-  .grade-rodape {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  table {
-    font-size: 0.85rem;
-  }
 }

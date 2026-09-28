@@ -1,0 +1,86 @@
+/* ===== Telas até 900px (tablets) ===== */
+@media (max-width: 900px) {
+  .grade-sobre,
+  .grade-artigo {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-destaques {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade-rodape {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cartao img {
+    height: 260px;
+  }
+}
+
+/* ===== Telas até 600px (celulares) ===== */
+@media (max-width: 600px) {
+  #cabecalho .container {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 24px;
+    gap: 12px;
+  }
+
+  #menu-principal ul {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .grade-destaques {
+    grid-template-columns: 1fr;
+  }
+
+  .cartao img {
+    height: 220px;
+  }
+
+  .grade-rodape {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  blockquote {
+    font-size: 1.05rem;
+    padding-left: 14px;
+  }
+
+  .tabela-cardapio {
+    overflow-x: auto;
+  }
+
+  table {
+    font-size: 0.85rem;
+    min-width: 480px; /* a tabela não é espremida — quem rola é o wrapper */
+  }
+}
+
+/* ===== Telas muito pequenas ===== */
+@media (max-width: 380px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  .botao {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+}
